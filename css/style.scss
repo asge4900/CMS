@@ -1,0 +1,42 @@
+
+
+main{
+
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.picpedia.org/highway-signs/images/question.jpg");        
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+          }
+      }
+
+    article{
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+footer{
+
+    .row{
+
+        div{
+
+            ul{
+                list-style-type: none;
+            }
+        }
+    }
+}
