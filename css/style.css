@@ -1,5 +1,6 @@
 main .hero-image {
-  background: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,11 +18,24 @@ main .hero-image .hero-text {
   color: white;
 }
 
+main article h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 main article img {
-  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 400px;
+  width: 50%;
 }
 
 footer .row div ul {
   list-style-type: none;
+  padding: 0;
+}
+
+footer .row div ul li a {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

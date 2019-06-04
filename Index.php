@@ -75,14 +75,13 @@
 <main class="">
     <div class="hero-image">
         <div class="hero-text">
-            <h1 style="font-size:50px">Headline</h1>
-            <p>Dummy text</p>           
+            <h1 style="font-size:50px">Altid lave priser og hurtig levering!</h1>                 
         </div>
     </div>       
 </main>  
-<footer>
-    <div class="row d-flex justify-content-around m-0">
-        <div class="col-lg-6 col-sm-6">
+<footer class="mt-5">
+    <div class="row m-0">
+        <div class="col-lg-6 ">
             <h4>Kontakt</h4>
             <ul>
                 <li>Navn A/S</li>
