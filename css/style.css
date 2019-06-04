@@ -1,6 +1,5 @@
 main .hero-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("http://www.picpedia.org/highway-signs/images/question.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.picpedia.org/highway-signs/images/question.jpg");
+  background: black;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
