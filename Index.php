@@ -81,7 +81,7 @@
 </main>  
 <footer class="mt-5">
     <div class="row m-0">
-        <div class="col-lg-6 ">
+        <div class="col-lg-6">
             <h4>Kontakt</h4>
             <ul>
                 <li>Navn A/S</li>
