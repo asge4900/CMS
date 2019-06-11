@@ -6,8 +6,8 @@
     $statement->execute();
     
     while ($row = $statement->fetch()) {        
-        ?>
-             <option value=""><?php echo $row['genreName']; ?></option>
+        ?>             
+             <input type="checkbox" class="form-check-input" id="genre" name="genre[]" value="<?php echo $row['genreName']; ?>"><?php echo $row['genreName']; ?> <br>
         <?php
     }
 ?>

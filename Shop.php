@@ -58,18 +58,18 @@
             </div>
         </li>
         <li class="nav-item">
-            <div class="modal fade" id="modaladdForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalAddProductForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header text-center">                        
-                                <form class="m-auto" action="/action_page.php">
+                                <form class="m-auto" action="assets/addProduct.php" method="post">
                                     <div class="form-group">
                                         <label for="title">Title:</label>
                                         <input type="text" class="form-control" id="title" placeholder="Skriv titlen på produktet" name="title" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="imgSrc">Billedes sti:</label>
-                                        <input type="text" class="form-control" id="imgSrc" placeholder="img.jpg" name="imgSrc" required>
+                                        <input type="text" class="form-control" id="imgSrc" placeholder="Skriv billedes sti" name="imgSrc" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="imgAlt">Billedes alt tekst:</label>
@@ -89,11 +89,12 @@
                                         <input type="tekst" class="form-control" id="authorId" placeholder="Skriv forfatters id" name="authorId" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="price">Genre:</label>
-                                        <select name="" id="" multiple class="form-control">
-                                            <?php include "assets/getGenre.php" ?>
-                                            <option value="">Andet</option>
-                                        </select>
+                                        <label for="genre">Genre:</label><br>
+                                        <!-- Inline style -->
+                                        <div class="form-check" style="width:200px; height:110px; overflow:auto; text-align:left">   
+                                                <?php include "assets/getGenre.php" ?>
+                                                <input type="checkbox" class="form-check-input" id="genre" name="genre" value="Andet">Andet <br>   
+                                        </div>                                        
                                     </div>
                                     <input type="submit" class="btn btn-primary" value="Tilføj produkt">                                    
                                 </form>
@@ -102,7 +103,7 @@
                     </div>
                 </div>
             <div class="text-center">
-            <a href="" class="nav-link" data-toggle="modal" data-target="#modaladdForm">Tilføj product</a>
+            <a href="" class="nav-link" data-toggle="modal" data-target="#modalAddProductForm">Tilføj product</a>
             </div>
         </li>
         </ul>
