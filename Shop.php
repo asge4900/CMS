@@ -93,7 +93,7 @@
                                         <!-- Inline style -->
                                         <div class="form-check" style="width:200px; height:110px; overflow:auto; text-align:left">   
                                                 <?php include "assets/getGenre.php" ?>
-                                                <input type="checkbox" class="form-check-input" id="genre" name="genre" value="Andet">Andet <br>   
+                                                <input type="checkbox" class="form-check-input" id="genre" name="genre[]" value="9">Andet <br>   
                                         </div>                                        
                                     </div>
                                     <input type="submit" class="btn btn-primary" value="Tilføj produkt">                                    
