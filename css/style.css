@@ -30,6 +30,13 @@ main article img {
   width: 50%;
 }
 
+#modalAddProductForm .genre {
+  width: 200px;
+  height: 110px;
+  overflow: auto;
+  text-align: left;
+}
+
 footer .row div ul {
   list-style-type: none;
   padding: 0;

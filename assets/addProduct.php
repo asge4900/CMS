@@ -1,11 +1,12 @@
 <?php
+    session_start();
     $title = $_POST['title'];
     $imgSrc = $_POST['imgSrc'];
     $imgAlt = $_POST['imgAlt'];
     $content = $_POST['content'];
     $price = $_POST['price'];
-    $authorId = $_POST['authorId'];
-    $genreString = "";
+    $authorId = $_SESSION['id'];
+    // $genreString = "";
     // foreach( $_POST["genre"] as $genre){
     //     $genreString = $genreString . "INSERT INTO productgenre (productId, genreId)
     // VALUES(@last_productID, ".$genre.");";}
@@ -28,19 +29,17 @@
     // foreach ($genre as $key => $value) {
     //    $statement->bindParam($key, $value);
     // }
-    $statement->execute();
-
-    // $statement->commit();
-?>
+    $statement->execute();    
 
 
 
-<!-- BEGIN;
-INSERT INTO products (title, imgSrc, imgAlt, content, price, authorId)
-	VALUES('bro', 'https://bit.ly/2K6TKWE', 'bro', 'bro', 45.48, 1);
-    SELECT LAST_INSERT_ID() INTO @last_productId;
-INSERT INTO productgenre (productId, genreId)
-	VALUES(@last_productID, 1);
-INSERT INTO productgenre (productId, genreId)
-	VALUES(@last_productID, 2);
-COMMIT; -->
+
+// BEGIN;
+// INSERT INTO products (title, imgSrc, imgAlt, content, price, authorId)
+// 	VALUES('bro', 'https://bit.ly/2K6TKWE', 'bro', 'bro', 45.48, 1);
+//     SELECT LAST_INSERT_ID() INTO @last_productId;
+// INSERT INTO productgenre (productId, genreId)
+// 	VALUES(@last_productID, 1);
+// INSERT INTO productgenre (productId, genreId)
+// 	VALUES(@last_productID, 2);
+// COMMIT;
