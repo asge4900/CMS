@@ -16,12 +16,12 @@
     <title>Document</title>
 
     <!-- TinyMCE -->
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         tinymce.init({
             selector: '#content'
         });
-  </script>
+  </script> -->
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-inverse navbar-dark">
@@ -41,7 +41,6 @@
                     <a href='assets/logout.php' class='nav-link'>Log ud</a>
                 </li>
                 <li class="nav-item">
-                    <!-- Addz product -->
                     <div class="modal fade" id="modalAddProductForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">

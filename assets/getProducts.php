@@ -16,7 +16,7 @@
                 <p>Genre: <?php echo $row['genre']; ?></p>
                 <p>Oprettelsesdato: <?php echo $date->format('d-m-Y'); ?></p>
                 <p>Forfatter: <?php echo $row['dbUsername']; ?></p>
-                <button>Køb</button>
+                <button>Køb</button><br>
 
                 <?php
                     if ($_SESSION['accessLevel'] == 1){ ?>
